@@ -6,16 +6,14 @@
 
 ## Windows
 
-先把下面地址里的 `USER` 换成这个仓库所属的用户名。
-
 ```powershell
-irm https://raw.githubusercontent.com/USER/rea-setup/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/1098294630-collab/rea-setup/main/install.ps1 | iex
 ```
 
 国内网络加镜像参数：
 
 ```powershell
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/USER/rea-setup/main/install.ps1))) -Mirror npmmirror
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/1098294630-collab/rea-setup/main/install.ps1))) -Mirror npmmirror
 ```
 
 脚本做的事：
@@ -28,7 +26,7 @@ irm https://raw.githubusercontent.com/USER/rea-setup/main/install.ps1 | iex
 ## macOS / Linux
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/USER/rea-setup/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/1098294630-collab/rea-setup/main/install.sh | sh
 ```
 
 没有 Node 或版本太旧时用 fnm 装 Node 24，然后装 REA 并进入 setup。
